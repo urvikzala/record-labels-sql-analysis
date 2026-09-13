@@ -1,6 +1,8 @@
--- Question 3: The TikTok to Spotify Pipeline
+-- Question 3: Spotify-to-TikTok Activity Ratio
 -- Compares each label's total Spotify streams against its total TikTok
--- views to see how much platform activity converts across. Rows with
+-- views. This is an activity ratio, not a conversion rate -- the data
+-- doesn't link individual viewers to listeners, so it can't measure
+-- anyone actually converting from one platform to the other. Rows with
 -- no TikTok data are excluded, and CAST AS FLOAT keeps the division
 -- from rounding down to zero before it's turned into a percentage.
 

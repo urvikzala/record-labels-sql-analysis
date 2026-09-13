@@ -1,7 +1,9 @@
--- Question 2: Bang for Your Buck
+-- Question 2: Streams per Mapped Artist
 -- Divides each label's total streams by its number of mapped artists
--- to get a per-artist efficiency metric, so raw totals don't just
--- favor whichever label happens to have more artists in the sample.
+-- to get a streams-per-artist figure, so raw totals don't just favor
+-- whichever label happens to have more artists in the sample. This
+-- is a streams metric only -- there's no cost or revenue data here,
+-- so it isn't a measure of financial efficiency.
 
 SELECT 
     r.record_label,
