@@ -30,6 +30,8 @@ I used SQLite to explore and clean the data, then built my own artist-to-label m
 
 > **Important scope note.** The label mapping reflects each artist's current label, not necessarily who released any specific song. Older tracks might have come out under a different label at the time, so the legacy-catalogue comparison is more of a directional read than a precise accounting of who owned what back then.
 
+**How to reproduce this.** Download the source CSV from [Most Streamed Spotify Songs 2024](https://www.kaggle.com/datasets/nelgiriyewithana/most-streamed-spotify-songs-2024) and import it into a new SQLite database using DB Browser for SQLite, naming the table exactly `spotify_streams`. Then import `data/record_labels.csv` from this repo the same way, naming that table exactly `record_labels`. Both table names are hardcoded into every query in `/queries`, so an import under a different name will cause them to fail.
+
 ## Analysis
 
 ### 1. Total Streams and Catalogue Mix
